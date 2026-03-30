@@ -30,12 +30,12 @@ const Contact = () => {
         {
             icon: HiMail,
             title: 'Email Us',
-            details: ['hello@ruhaam.com', 'support@ruhaam.com'],
+            details: ['Ruhaamlabel@gmail.com', 'Info@ruhaam.in'],
         },
         {
             icon: HiPhone,
             title: 'Call Us',
-            details: ['+91 98765 43210', '+91 87654 32109'],
+            details: ['+91 73961 00371'],
         },
         {
             icon: HiLocationMarker,
@@ -50,10 +50,10 @@ const Contact = () => {
     ];
 
     const socialLinks = [
-        { icon: FaInstagram, href: 'https://instagram.com/ruhaam', label: 'Instagram' },
+        { icon: FaInstagram, href: 'https://instagram.com/labelruhaam', label: 'Instagram' },
         { icon: FaFacebookF, href: 'https://facebook.com/ruhaam', label: 'Facebook' },
         { icon: FaTwitter, href: 'https://twitter.com/ruhaam', label: 'Twitter' },
-        { icon: FaWhatsapp, href: 'https://wa.me/919876543210', label: 'WhatsApp' },
+        { icon: FaWhatsapp, href: 'https://wa.me/917396100371', label: 'WhatsApp' },
     ];
 
     return (
@@ -183,7 +183,7 @@ const Contact = () => {
                                                 value={formData.phone}
                                                 onChange={handleInputChange}
                                                 className="input-elegant"
-                                                placeholder="+91 98765 43210"
+                                                placeholder="+91 73961 00371"
                                             />
                                         </div>
                                         <div>

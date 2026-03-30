@@ -27,7 +27,7 @@ const Footer = () => {
     };
 
     const socialLinks = [
-        { icon: FaInstagram, href: 'https://instagram.com/ruhaam', label: 'Instagram' },
+        { icon: FaInstagram, href: 'https://instagram.com/labelruhaam', label: 'Instagram' },
         { icon: FaFacebookF, href: 'https://facebook.com/ruhaam', label: 'Facebook' },
         { icon: FaTwitter, href: 'https://twitter.com/ruhaam', label: 'Twitter' },
         { icon: FaPinterestP, href: 'https://pinterest.com/ruhaam', label: 'Pinterest' },

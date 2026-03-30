@@ -1,24 +1,40 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { HiArrowRight } from 'react-icons/hi';
 
 const Hero = () => {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play().catch(error => {
+                console.warn("Autoplay was prevented or video format not supported:", error);
+            });
+        }
+    }, []);
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
-            <div className="absolute inset-0">
-                <img
-                    src="/images/hero.png"
-                    alt="Ruhaam Premium Menswear"
-                    className="w-full h-full object-cover object-center"
-                    style={{ objectPosition: 'center 20%' }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30" />
+            {/* Background Video */}
+            <div className="absolute inset-0 z-0">
+                <video
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center' }}
+                >
+                    <source src="/images/IMG_3600.MOV" />
+                </video>
+                {/* Overlay for better text readability */}
+                <div className="absolute inset-0 bg-black/40 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
             </div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left w-full">
                 <div className="max-w-2xl">
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
@@ -75,7 +91,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.6 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
             >
                 <motion.div
                     animate={{ y: [0, 10, 0] }}

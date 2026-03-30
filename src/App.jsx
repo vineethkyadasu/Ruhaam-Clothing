@@ -24,6 +24,7 @@ function App() {
     <CartProvider>
       <WishlistProvider>
         <div className="App min-h-screen flex flex-col">
+          <ScrollToTop />
           <Navbar />
           <div className="flex-1">
             <Routes>
