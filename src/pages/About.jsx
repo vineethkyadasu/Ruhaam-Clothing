@@ -33,7 +33,7 @@ const AboutPage = () => {
             <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="/images/lifestyle.png"
+                        src="/images/product/about.jpg"
                         alt="Ruhaam Story"
                         className="w-full h-full object-cover"
                     />
@@ -122,7 +122,7 @@ const AboutPage = () => {
                             className="relative"
                         >
                             <img
-                                src="/images/hero.png"
+                                src="/images/product/aboutsection.jpg"
                                 alt="Ruhaam Quality"
                                 className="w-full rounded-lg shadow-xl"
                             />

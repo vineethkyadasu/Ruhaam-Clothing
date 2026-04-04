@@ -40,9 +40,9 @@ const About = () => {
                     >
                         <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
                             <img
-                                src="/images/lifestyle.png"
+                                src="/images/product/about.jpg"
                                 alt="Ruhaam Lifestyle"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover shadow-2xl"
                             />
                         </div>
                         {/* Floating Card */}
@@ -68,11 +68,14 @@ const About = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <span className="text-gold-400 text-sm tracking-widest uppercase mb-4 block">
-                            About Ruhaam
+                            OUR STORY
                         </span>
-                        <h2 className="heading-lg text-gray-900 mb-6">
-                            Where Soul Meets Style
+                        <h2 className="heading-lg text-gray-900 mb-2">
+                            About Ruhaam
                         </h2>
+                        <p className="text-xl text-primary-600 font-serif italic mb-6">
+                            Where soul meets style. Crafted with compassion, designed with purpose.
+                        </p>
                         <div className="divider mb-8" />
 
                         <div className="space-y-4 text-gray-600 leading-relaxed mb-10">
