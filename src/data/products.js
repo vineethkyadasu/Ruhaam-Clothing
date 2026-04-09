@@ -259,14 +259,14 @@ export const founders = [
         id: 1,
         name: "Anil Rathod",
         role: "Co-Founder",
-        image: "/images/founder-anil.png",
+        image: "/images/boy.png",
         bio: "With a passion for timeless design and authentic craftsmanship, Anil brings vision and purpose to every Ruhaam creation.",
     },
     {
         id: 2,
         name: "Ramya Rangineni",
         role: "Co-Founder",
-        image: "/images/founder-ramya.png",
+        image: "/images/girl.png",
         bio: "Ramya's dedication to soulful storytelling and meaningful experiences shapes the heart of the Ruhaam brand.",
     },
 ];

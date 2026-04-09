@@ -30,7 +30,7 @@ const Hero = () => {
                     <source src="/images/IMG_3600.MOV" />
                 </video>
                 {/* Overlay for better text readability */}
-                <div className="absolute inset-0 bg-black/40 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+                {/* <div className="absolute inset-0 bg-black/40 bg-gradient-to-r from-black/60 via-black/30 to-transparent" /> */}
             </div>
 
             {/* Content */}
@@ -51,7 +51,9 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="heading-xl text-white mb-6"
                     >
-                        Crafted with <span className="text-gold-400 italic">Soul</span>
+                        <span className="bg-primary-600 px-4 py-2">
+                            Crafted with <span className="text-gold-400 italic">Soul</span>
+                        </span>
                     </motion.h1>
 
                     <motion.p
@@ -60,7 +62,9 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.6 }}
                         className="text-lg md:text-xl text-gray-200 font-light leading-relaxed mb-8"
                     >
-                        Luxury that feels effortless. Style that feels right. Premium menswear for modern men who value comfort, quality, and elegance.
+                        <span className="bg-primary-600 px-2 py-1 leading-[2.5] box-decoration-clone">
+                            Luxury that feels effortless. Style that feels right. Premium menswear for modern men who value comfort, quality, and elegance.
+                        </span>
                     </motion.p>
 
                     <motion.div
