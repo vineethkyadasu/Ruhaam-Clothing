@@ -62,7 +62,7 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.6 }}
                         className="text-lg md:text-xl text-gray-200 font-light leading-relaxed mb-8"
                     >
-                        <span className="bg-primary-600 px-2 py-1 leading-[2.5] box-decoration-clone">
+                        <span>
                             Luxury that feels effortless. Style that feels right. Premium menswear for modern men who value comfort, quality, and elegance.
                         </span>
                     </motion.p>
