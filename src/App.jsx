@@ -18,6 +18,7 @@ import Wishlist from './pages/Wishlist';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import Policies from './pages/Policies';
 
 function App() {
   return (
@@ -37,9 +38,14 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/terms-conditions" element={<Policies />} />
+              <Route path="/privacy-policy" element={<Policies />} />
+              <Route path="/refund-policy" element={<Policies />} />
+              <Route path="/shipping-policy" element={<Policies />} />
             </Routes>
           </div>
           <Footer />
+
         </div>
       </WishlistProvider>
     </CartProvider>

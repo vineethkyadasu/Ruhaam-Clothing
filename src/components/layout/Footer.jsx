@@ -19,8 +19,10 @@ const Footer = () => {
             { name: 'Contact', path: '/contact' },
         ],
         support: [
-            { name: 'Shipping Info', path: '/shipping' },
-            { name: 'Returns & Exchange', path: '/returns' },
+            { name: 'Terms & Conditions', path: '/terms-conditions' },
+            { name: 'Privacy Policy', path: '/privacy-policy' },
+            { name: 'Refund & Cancellation', path: '/refund-policy' },
+            { name: 'Shipping & Delivery', path: '/shipping-policy' },
             { name: 'Size Guide', path: '/size-guide' },
             { name: 'FAQs', path: '/faqs' },
         ],
